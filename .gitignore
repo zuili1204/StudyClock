@@ -33,3 +33,6 @@ records-backup/
 # ---------- 本机数据库与临时快照 ----------
 *.db-wal
 *.db-shm
+
+# 一次性取证脚本：依赖真机备份快照（build/real-device-backup/），对仓库使用者无意义
+scripts/profile-evidence.py
