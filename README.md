@@ -81,7 +81,7 @@ export ANDROID_HOME=/path/to/Android/Sdk
 ./gradlew connectedDebugAndroidTest  # 仪器测试，需要连接设备
 ```
 
-Windows 上若用户名含非 ASCII 字符，`gradle.properties` 已把 Gradle 进程编码固定为 GBK（源码与产物仍是 UTF-8），细节见该文件注释。
+> **非 Windows 环境请先改一行。** `gradle.properties` 把 Gradle 进程编码固定为 `GBK`，用于适配「中文用户名 + GBK 系统区域」下 JDK 读 `@argfile` 的兼容问题（不改就报 `GradleWorkerMain` 找不到）。在 macOS / Linux 或英文 Windows 上，把该行的 `-Dfile.encoding=GBK` 换成 `-Dfile.encoding=UTF-8` 即可；源码与产物始终是 UTF-8。
 
 ## 数据与隐私
 
