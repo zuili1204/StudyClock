@@ -2,15 +2,17 @@
 
 <img src="icon.png" width="88" alt="题迹">
 
-# 题迹 · StudyClock
+<h1>题迹 · StudyClock</h1>
 
-**离线优先的 Android 学习记录应用。只记事实，不合成分数；数据不出设备。**
+<p><b>离线优先的 Android 学习记录应用。只记事实，不合成分数；数据不出设备。</b></p>
 
-![License](https://img.shields.io/badge/license-MIT-2C4756)
-![Android](https://img.shields.io/badge/Android-8.0%2B-4F6B4A)
-![Kotlin](https://img.shields.io/badge/Kotlin-1.9-8A6438)
-![No Network](https://img.shields.io/badge/permission-no%20INTERNET-B4472F)
-![Tests](https://img.shields.io/badge/JVM%20tests-458%20passed-2C4756)
+<p>
+  <img src="https://img.shields.io/badge/license-MIT-2C4756" alt="license: MIT">
+  <img src="https://img.shields.io/badge/Android-8.0%2B-4F6B4A" alt="Android 8.0+">
+  <img src="https://img.shields.io/badge/Kotlin-1.9-8A6438" alt="Kotlin 1.9">
+  <img src="https://img.shields.io/badge/permission-no%20INTERNET-B4472F" alt="no INTERNET permission">
+  <img src="https://img.shields.io/badge/JVM%20tests-458%20passed-2C4756" alt="458 JVM tests passed">
+</p>
 
 </div>
 
@@ -18,13 +20,10 @@
 
 ## 界面
 
-| 今日 | 看板 · 上 | 看板 · 下 |
+| | | |
 |:--:|:--:|:--:|
-| <img src="screenshots/01-today.png" width="250"> | <img src="screenshots/02-board-top.png" width="250"> | <img src="screenshots/03-board-bottom.png" width="250"> |
-| **记录** | **我的** | |
-| <img src="screenshots/04-records.png" width="250"> | <img src="screenshots/05-settings.png" width="250"> | |
-
-> 截图取自设计稿，与真机实现同尺寸（340 × 742 dp），数据为示意。
+| <img src="screenshots/01-today.png" width="250" alt="今日"><br>**今日** | <img src="screenshots/02-board-top.png" width="250" alt="看板上半"><br>**看板 · 上** | <img src="screenshots/03-board-bottom.png" width="250" alt="看板下半"><br>**看板 · 下** |
+| <img src="screenshots/04-records.png" width="250" alt="记录"><br>**记录** | <img src="screenshots/05-settings.png" width="250" alt="我的"><br>**我的** | <sub>示意数据<br>与真机同尺寸 340 × 742 dp</sub> |
 
 ## 这是什么
 
@@ -44,7 +43,7 @@
 | **月历节律** | 一天四根条（题 / 分 / 复 / 专）同屏；条长是当天的量，深色段是答对 / 通过的部分；另有热力视图、覆盖率、最长连续、断档统计 |
 | **看板五章** | 节律 / 表现 / 投入 / 值得注意 / 细节。观察、发现、训练处方、错题闭环都在第四章，回答「下一步做什么」 |
 | **整理** | 科目与类别的改名、排序、归档、删除；预置的 43 条基线只可排序与归档，有任何记录引用的科目永不被删 |
-| **数据出口** | CSV 20 列导出 / 导入（兼容旧 14 列）、JSON 全量备份与恢复（schema 6，可恢复 3–5）、可指定外部文件夹定期备份 |
+| **数据出口** | CSV 20 列导出 / 导入（兼容旧 14 列）、JSON 全量备份与恢复（schema 6，可恢复 3–5）、可备份到自选的外部文件夹 |
 | **小组件** | 桌面一键开始 25 分钟，计时中显示倒计时，暂停与结束不必先开应用 |
 
 统计侧共 46 项指标，按 A–G、R、X、P 分组建档。
@@ -57,11 +56,7 @@
 - Debug 签名，可直接安装；首次安装需在系统里允许「安装未知来源应用」
 - 覆盖安装不会丢数据，但**卸载会连同数据一起删除**——换机或重装前先在应用内做一次全量备份
 
-校验：
-
-```
-SHA-256  见 release/SHA256SUMS.txt
-```
+校验：下载 [`release/SHA256SUMS.txt`](release/SHA256SUMS.txt)，在同一目录执行 `sha256sum -c SHA256SUMS.txt`。
 
 ## 从源码构建
 
