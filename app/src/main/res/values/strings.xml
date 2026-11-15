@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">题迹</string>
+    <string name="widget_name">题迹 · 计时</string>
+    <string name="widget_description">一键开始一次练习，计时中显示倒计时，暂停与结束不必先开应用。</string>
+    <!-- 首帧与选择器预览文案；组件更新后由 TimerWidgetStates 覆盖。 -->
+    <string name="widget_idle_title">题迹</string>
+    <string name="widget_idle_subtitle">从一次 25 分钟开始</string>
+    <string name="widget_idle_primary">开始 25 分钟</string>
+    <string name="widget_idle_secondary">补记</string>
+</resources>

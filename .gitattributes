@@ -1,0 +1,21 @@
+# 统一换行，避免 Windows / macOS 之间互相改行尾
+* text=auto eol=lf
+
+# 二进制：不做换行转换，也不做 diff 猜测
+*.png binary
+*.jpg binary
+*.webp binary
+*.apk binary
+*.jar binary
+*.jks binary
+*.keystore binary
+*.ttf binary
+*.otf binary
+
+# Windows 脚本必须保留 CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 生成的锁文件在 diff 里折叠
+gradle/wrapper/gradle-wrapper.properties linguist-generated=true
+app/schemas/** linguist-generated=true

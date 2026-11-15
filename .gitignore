@@ -1,0 +1,35 @@
+# ---------- 构建产物 ----------
+.gradle/
+.bootstrap/
+build/
+**/build/
+captures/
+*.hprof
+build-log*.txt
+crash-log*.txt
+hs_err_pid*.log
+replay_pid*.log
+
+# ---------- 本机配置与签名 ----------
+# local.properties 含本机 SDK 路径；key.properties 含签名口令。
+# 两者都只应存在于本机，仓库里只保留 *.template。
+local.properties
+key.properties
+*.jks
+*.keystore
+
+# ---------- IDE ----------
+.idea/
+*.iml
+.vscode/
+
+# ---------- 不随仓库分发的内部资料 ----------
+# docs/ 是内部工作稿：设计书、开发规划、决策记录、验收清单、真机取证与记录备份。
+# 发布到公开仓库时整体排除，README 是仓库里唯一的对外说明。
+docs/
+.workbuddy/
+records-backup/
+
+# ---------- 本机数据库与临时快照 ----------
+*.db-wal
+*.db-shm
